@@ -86,7 +86,6 @@ const AirBus = {
   },
 }
 
-AirBus.book( 98, 'Lawrence Cardoza')
 
 const book = AirBus.book
 
@@ -100,13 +99,34 @@ const eurowing = {
 const Indogo = {
   airline: 'Indigo Air',
   iataCode: 'CH = ',
-  bookings: [],
+  bookings: [], 
 }
 
-book.call(Indogo,52, 'Cardoza Rita');
-console.log(Indogo)
+// book.call(Indogo,52, 'Cardoza Rita');
+// console.log(Indogo)
 
-book.call(eurowing,23, 'Cardoza Robert');
-console.log(eurowing)
+// book.call(eurowing,23, 'Cardoza Robert');
+// console.log(eurowing)
 
-console.log(AirBus)
+// console.log(AirBus)
+
+// Bind Method
+
+// const bookEW = book.bind(eurowing);
+const bookIN = book.bind(Indogo);
+const bookAR = book.bind(AirBus);
+
+bookIN(21,"Lawrence")
+bookAR(65,"samay")
+// bookEW(32,"Rohini");
+
+const bookEW23 = book.bind(eurowing,32,)
+bookEW23("Rohini");
+bookEW23('Rahul')
+
+
+// With Event Listeners
+
+
+
+
