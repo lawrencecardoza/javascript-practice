@@ -25,10 +25,60 @@
 
 // dataPromise.then(res => console.log(res))
 
-const USER_API = 'https://dummyjson.com/users'
+// const USER_API = 'https://dummyjson.com/users'
 
-const user = fetch(USER_API);
+// const user = fetch(USER_API);
 
-// console.log(user)
+// // console.log(user)
 
-user.then(data => console.log(data))
+// user.then(data => console.log(data))
+
+// const greet = () => {
+
+//   return new Promise((resolve,reject) => {
+
+//     setTimeout( () => {
+//       resolve("lawrence")
+//     },2000)
+
+//   });
+// }
+
+// console.log("A")
+
+// greet()
+// .then(data => {
+//   console.log(data)
+// })
+
+// console.log("B")
+
+const login = (user,password) => {
+
+  return new Promise((resolve , reject) =>{
+
+    console.log('Checking credentials...');
+
+    setTimeout(() => {
+
+      if(user === "lawrence" && password === 123456){
+        resolve('Login Success ✅')
+      }else{
+        reject('Invalid Credentials ❌');
+      }
+    }, 2000);
+  })
+}
+
+console.log("Start")
+
+login("lawrence",123456)
+.then((data) => {
+  console.log(data)
+})
+.catch((err) =>{
+  console.log(err)
+});
+
+console.log("End")
+

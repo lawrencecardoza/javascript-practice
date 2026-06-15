@@ -190,72 +190,72 @@
 
 //   (()=> console.log("Arrow IIFE"))();
 
-const secureBooking = function(){
-  let passengerCount = 0;
+// const secureBooking = function(){
+//   let passengerCount = 0;
   
-  return function(){
-    passengerCount++;
-    console.log(`${passengerCount} passengers`)
-  }
-}
-
-const booker = secureBooking();
-
-booker();
-booker();
-booker();  
-booker();
-
-
-// function greet(name){
-
-//   return function (){
-//     return `Hello ${name}`
-//   }
-// }
-
-// const sayHello = greet("lawrence");
-// console.log(sayHello())
-
-// function score(){
-
-//   let count = 10
-
 //   return function(){
-//   count = count + 10
-//     console.log(count)
+//     passengerCount++;
+//     console.log(`${passengerCount} passengers`)
 //   }
-
 // }
 
-// const addscore = score();
-// addscore()
-// addscore()
-// addscore()
+// const booker = secureBooking();
 
-let f;
-
-const g = function(){
-  const a = 23;
-   f = function(){
-    console.log(a*2); 
-   };
-};
-g()
-f()
-console.dir(f)
+// booker();
+// booker();
+// booker();  
+// booker();
 
 
-const h = function(){
-  const b = 777;
-  f = function(){
-    console.log(b*2);
-  }
-}
+// // function greet(name){
 
-h()
-f()
-console.dir(f)
+// //   return function (){
+// //     return `Hello ${name}`
+// //   }
+// // }
+
+// // const sayHello = greet("lawrence");
+// // console.log(sayHello())
+
+// // function score(){
+
+// //   let count = 10
+
+// //   return function(){
+// //   count = count + 10
+// //     console.log(count)
+// //   }
+
+// // }
+
+// // const addscore = score();
+// // addscore()
+// // addscore()
+// // addscore()
+
+// let f;
+
+// const g = function(){
+//   const a = 23;
+//    f = function(){
+//     console.log(a*2); 
+//    };
+// };
+// g()
+// f()
+// console.dir(f)
+
+
+// const h = function(){
+//   const b = 777;
+//   f = function(){
+//     console.log(b*2);
+//   }
+// }
+
+// h()
+// f()
+// console.dir(f)
 
 
 
@@ -276,4 +276,34 @@ console.dir(f)
 // }
 
 // Boardpaseenger(180,3)
+
+//Practise
+
+function counter(){
+
+  let count = 0;
+
+  return function (){
+    count += 10;
+    console.log(count)
+  }
+}
+
+const Multicounter = counter()
+
+Multicounter()
+Multicounter()
+Multicounter()
+
+const createMultiplier = (x) => {
+
+  return  (y) => {
+    return x * y;
+  }
+  
+}
+
+const create = createMultiplier(3);
+console.log(create(2));
+
 
