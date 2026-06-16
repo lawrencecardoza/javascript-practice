@@ -113,7 +113,7 @@ Promise.resolve(10)
     .then(console.log)
 
 
-    
+
 Promise.resolve(5)
 .then( x => x + 1)
 .then( x =>  {
@@ -121,3 +121,29 @@ Promise.resolve(5)
 })
 .then( x => console.log("This will Not run"))
 .catch(err => console.log(err));
+
+// prommises all :- Agar ek bhi reject hua → pura Promise.all fail
+
+const p1 =  Promise.resolve(10);
+const p2 =  Promise.resolve(20);
+const p3 =  Promise.resolve(30);
+
+Promise.all([p1,p2,p3])
+.then(data => console.log(data))
+
+// Promise.allSettled :- 
+
+const p_1 = Promise.resolve(10);
+const p_2 = Promise.reject("Error");
+const p_3 = Promise.resolve(30);
+
+Promise.allSettled([p_1,p_2,p_3])
+.then(data => console.log(data))
+
+//Promise.race():-Fastest wins (chahe success ho ya error) 
+// Jo promise pehle complete (resolve/reject) hota hai, uska result return karta hai.
+
+const pro1 = new Promise((res) => setTimeout(() => res('One'), 1000))
+const pro2 = new Promise((res) => setTimeout(() => res('Two'), 5000))
+
+Promise.race([pro1, pro2]).then((result) => console.log(result))
