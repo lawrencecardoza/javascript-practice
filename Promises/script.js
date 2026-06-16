@@ -53,32 +53,71 @@
 
 // console.log("B")
 
-const login = (user,password) => {
+// const login = (user,password) => {
 
-  return new Promise((resolve , reject) =>{
+//   return new Promise((resolve , reject) =>{
 
-    console.log('Checking credentials...');
+//     console.log('Checking credentials...');
 
-    setTimeout(() => {
+//     setTimeout(() => {
 
-      if(user === "lawrence" && password === 123456){
-        resolve('Login Success ✅')
-      }else{
-        reject('Invalid Credentials ❌');
-      }
-    }, 2000);
-  })
-}
+//       if(user === "lawrence" && password === 123456){
+//         resolve('Login Success ✅')
+//       }else{
+//         reject('Invalid Credentials ❌');
+//       }
+//     }, 2000);
+//   })
+// }
 
-console.log("Start")
+// console.log("Start")
 
-login("lawrence",123456)
-.then((data) => {
-  console.log(data)
+// login("lawrence",123456)
+// .then((data) => {
+//   console.log(data)
+// })
+// .catch((err) =>{
+//   console.log(err)
+// });
+
+// console.log("End")
+
+// const p = new Promise((resolve, reject) => {
+//   console.log('Start')
+
+//   resolve('Success')
+
+//   console.log('End')
+// })
+
+// p.then((data)=> {
+//   console.log(data)
+// })
+
+Promise.resolve(2)
+  .then((num) => num * 2)
+  .then((num) => num * 2)
+  .then((num) => num * 2)
+  .then((num) => console.log(num))
+
+Promise.resolve(10)
+    .then((a) => {
+      return a + 5
+    })
+    .then((b) => {
+      return b * 2
+    })
+    .then((c) => {
+      return c + 5
+    })
+    .then(console.log)
+
+
+    
+Promise.resolve(5)
+.then( x => x + 1)
+.then( x =>  {
+  throw 'fail';
 })
-.catch((err) =>{
-  console.log(err)
-});
-
-console.log("End")
-
+.then( x => console.log("This will Not run"))
+.catch(err => console.log(err));
