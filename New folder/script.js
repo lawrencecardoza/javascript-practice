@@ -47,4 +47,3 @@ let user = ''
 
 let prices = [10, 25, 5, 40, 15]
 
-giiir
