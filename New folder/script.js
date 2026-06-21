@@ -108,12 +108,32 @@ let user = ''
 // }
 // console.log(cleanInputs)
 
-let scores = [45, 80, 95, 100, 60, 75]
+// let scores = [45, 80, 95, 100, 60, 75]
 
-for(let i=0; i<scores.length; i++){
-  if(scores[i] === 100){
+// for(let i=0; i<scores.length; i++){
+//   if(scores[i] === 100){
     
-    console.log("Target Found!",scores[i]);
-    break;
+//     console.log("Target Found!",scores[i]);
+//     break;
+//   }
+// }
+
+
+// let grades = [55, 80, 42, 90, 58];
+
+// for(let i=0; i< grades.length; i++){
+//   if(grades[i] < 60){ 
+//     grades[i] += 5;
+//     console.log(grades[i])
+//   }
+// }
+// console.log(`Total grade ${grades}`)
+
+for(let i=1; i<=15; i++){
+  if(i === 10){
+    continue;
   }
+  console.log(i)
 }
+
+
