@@ -41,7 +41,10 @@ let user = ''
 
 //Ternary
 
-const message = user.length === 0 ? 'Enter your password' : user.length >= 8 ? 'Strong' : 'Weak' // The final default "else"
+// const message = user.length === 0 ? 'Enter your password' : user.length >= 8 ? 'Strong' : 'Weak' // The final default "else"
 
-console.log(message)
+// console.log(message)
 
+let prices = [10, 25, 5, 40, 15]
+
+giiir
