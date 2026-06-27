@@ -74,7 +74,7 @@ factorial = (n)=> {
 
 console.log(factorial(5))
 
-
+// 7. Prime Number
 
 
 
