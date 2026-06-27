@@ -29,26 +29,51 @@
 
 // 4. Calculator
 
-function calculator(num1 ,operator, num2){
-  let result;
+// function calculator(num1 ,operator, num2){
+//   let result;
 
-  if(operator === "+" ){
-    result = num1 + num2;
-  }else if(operator === "-" ){
-    result =  num1 - num2
-  }else if(operator === "/"){
-    result = num1 / num2
-  }else{
-    result = num1 * num2
+//   if(operator === "+" ){
+//     result = num1 + num2;
+//   }else if(operator === "-" ){
+//     result =  num1 - num2
+//   }else if(operator === "/"){
+//     result = num1 / num2
+//   }else{
+//     result = num1 * num2
+//   }
+
+//   return result;
+// }
+
+// console.log(calculator(5, '+', 5))
+// console.log(calculator(5, '-', 3))
+// console.log(calculator(5, '/', 3))
+// console.log(calculator(5, '*', 3))
+
+
+// 5. Multiplication Table
+
+// let num = 0;
+// for(let i=1; i<=20; i++){
+
+//   if(i % 2 === 0){
+//     num++
+//     console.log(`2 * ${num} = ${i}`)
+//   }
+// }
+
+//6. Factorial 
+
+factorial = (n)=> {
+  let result = 1;
+  for(let i=1; i<=n; i++){
+    result = result * i;
   }
-
   return result;
 }
 
-console.log(calculator(5, '+', 5))
-console.log(calculator(5, '-', 3))
-console.log(calculator(5, '/', 3))
-console.log(calculator(5, '*', 3))
+console.log(factorial(5))
+
 
 
 
