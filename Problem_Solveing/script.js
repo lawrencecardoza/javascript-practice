@@ -4,7 +4,6 @@ console.log('Hello World');
 
 // 2. Even/Odd
 
-let num;
 
 for(let i=1; i<=20; i++){
   
@@ -16,3 +15,28 @@ for(let i=1; i<=20; i++){
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let num = 0
+
+// for (let i = 1; i <= 20; i++) {
+//   if (i % 2 === 0) {
+//     num++
+//     console.log(`2 * ${num} = ${i} `)
+//   }
+// }
