@@ -81,7 +81,7 @@
 //   }
 
 //   for (let i = 2; i <= Math.sqrt(n); i++) {
-//     if (n % i === 0) 
+//     if (n % i === 0)
 //     isPrime = false
 //   }
 
@@ -127,7 +127,6 @@
 
 // console.log(`resverse num ${num} is ${reverseNuumber(num)}`)
 
-
 // 10. Fibonacci
 
 // let n1 = 0, n2 = 1;
@@ -143,7 +142,7 @@
 
 // 11. Reverse String
 
-// we solve this problem 2 way 
+// we solve this problem 2 way
 // 1.split and reverse
 
 // let string = 'Lawrence';
@@ -168,7 +167,7 @@
 // 12. Palindrome String
 
 // stringPalindrome = (str) => {
-  
+
 //   let length = str.length
 
 //   for(let i=0; i<length; i++){
@@ -213,9 +212,27 @@
 
 // removeSpaces = (str) => {
 
-//   return str.split(' ').join('')
+// //   return str.split(' ').join('');
+// return str.replace(/\s/g, '')
+
 // }
 
 // console.log(removeSpaces("Lawrence Cardoza Robert"))
 
+// 16. Capitalize Words
 
+// capitalizeWork = (str) => {
+
+//   // return str.split(' ').map((char) => char.charAt(0).toUpperCase() + char.slice(1)).join('');
+
+//   if (!str) return '';
+//   return str
+//     .split(' ')
+//     .map((char) => {
+//       if (char.length === 0) return char
+//       return char[0].toUpperCase() + char.slice(1)
+//     })
+//     .join()
+// }
+
+// console.log(capitalizeWork('Lawrence'))
