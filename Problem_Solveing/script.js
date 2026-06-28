@@ -110,29 +110,22 @@
 //   //   return false
 // }
 
-// console.log(isPalindrome("geetaateeg"))
+// console.log(isPalindrome("lawwal"))
 
 // 9. Reverse Number
-let num = 987654321
+// let num = 987654321
 
-reverseNuumber = (num) => {
-   let reverse = 0;
-   while (num > 0){
-      let temp = num % 10;
-      num = Math.floor(num / 10);
-      reverse = reverse * 10 + temp
-   }
-   return reverse;
-}
+// reverseNuumber = (num) => {
+//    let reverse = 0;
+//    while (num > 0){
+//       let temp = num % 10;
+//       num = Math.floor(num / 10);
+//       reverse = reverse * 10 + temp
+//    }
+//    return reverse;
+// }
 
-console.log(`resverse num ${num} is ${reverseNuumber(num)}`)
-
-
-
-
-
-
-
+// console.log(`resverse num ${num} is ${reverseNuumber(num)}`)
 
 
 // 10. Fibonacci
