@@ -141,3 +141,81 @@
 //   n2 = n3;
 // }
 
+// 11. Reverse String
+
+// we solve this problem 2 way 
+// 1.split and reverse
+
+// let string = 'Lawrence';
+
+// reverseString = (str) => {
+
+//    return str.split('').reverse().join('');
+// }
+// console.log(reverseString(string))
+
+// 2.algorithm
+
+// reverseString2 = (str) => {
+//    let reverseStringresult = '';
+//    for(let i=0; i<str.length; i++){
+//       reverseStringresult = str[i] + reverseStringresult;
+//    }
+//    return reverseStringresult;
+// }
+// console.log(reverseString2(string))
+
+// 12. Palindrome String
+
+// stringPalindrome = (str) => {
+  
+//   let length = str.length
+
+//   for(let i=0; i<length; i++){
+//     if(str[i] !== str[length - 1 - i])
+//     return false
+//   }
+//   return true
+
+//   if(str === str.split('').reverse().join('')){
+//     return true
+//   }else{
+//       return false
+//   }
+// }
+
+// console.log(stringPalindrome("lawwal"));
+
+// 13. Count Vowels
+
+// let string = 'LAwrence'
+
+// findVowel = (str) => {
+
+//   let vowel = ["a","e","e","i","o"];
+
+//   for(let i=0; i<str.length; i++){
+//     return str.toLowerCase().split('').filter(v => vowel.includes(v)).length;
+//   }
+// }
+
+// console.log(findVowel(string))
+
+// 14. Count Characters
+
+// countChar = (str) => {
+//   return str.length
+// }
+
+// console.log(countChar("lawrence"));
+
+// 15. Remove Spaces
+
+// removeSpaces = (str) => {
+
+//   return str.split(' ').join('')
+// }
+
+// console.log(removeSpaces("Lawrence Cardoza Robert"))
+
+
