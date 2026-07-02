@@ -14,6 +14,8 @@
     finfOfThree = (a,b,c,d) => {
       let max;
 
+      // we have to use = in condition taki mein same value miss match ho jaati hai
+
   
       if(a >= b && a >= c && a >= d){
         max = {a}
@@ -28,6 +30,7 @@
     }
   
     const result = finfOfThree(1,6,9,3);
-    console.log(result);
+      // const result = finfOfThree(1,6,6,3); mis match bcoz same value without = (equal)
+    console.log("maxNumber",result);
   </script>
 </html>
