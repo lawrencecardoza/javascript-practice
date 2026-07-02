@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leap Year</title>
+</head>
+<body>
+  <h1>Check Leap Year</h1>
+</body>
+<script>
+  LeapYear = (year) =>{
+    if(year % 400 === 0){
+      return "Leap Year"
+    }else if (year % 100 === 0){
+      return "Not Year Leap"
+    }else if(year % 4 === 0){
+      return "Leap Year"
+    }else{
+      return 'Not Year Leap'
+    }
+  }
+
+console.log(LeapYear(2001))
+console.log(LeapYear(2004))
+console.log(LeapYear(2024 ))
+console.log(LeapYear(2001))
+
+
+</script>
+</html>
