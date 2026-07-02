@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Find the Maximun of Three Number</h1>
+  </body>
+
+  <script>
+
+    finfOfThree = (a,b,c,d) => {
+      let max;
+
+  
+      if(a >= b && a >= c && a >= d){
+        max = {a}
+      }else if(b >= a && b >= c && b >= d ){
+        max = {b}
+      }else if(c >= a && c >= b && c >= d){
+        max = {c}
+      }else{
+        max = {d}
+      }
+      return max
+    }
+  
+    const result = finfOfThree(1,6,9,3);
+    console.log(result);
+  </script>
+</html>

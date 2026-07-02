@@ -232,7 +232,57 @@
 //       if (char.length === 0) return char
 //       return char[0].toUpperCase() + char.slice(1)
 //     })
-//     .join()
+//     .join(' ')
 // }
 
 // console.log(capitalizeWork('Lawrence'))
+
+
+// let num = 10;
+
+// for(let i=1; i<=num; i++){
+//   console.log(i)
+// }
+
+// Time Complex
+// let num1 = 10
+// for (let i = 1; i <= num1; i++) {
+//   console.log(num1 - i + 1)
+// }
+
+// const num = 10
+
+// for (let i = 1; i <= num; i++) {
+//   if (i % 2 === 0) {
+//     console.log(i)
+//   }
+// }
+
+
+// Natural Number 
+// console.time()
+// // brute Solution Its take 9 sec
+// let num = 5;
+// // let result = 0;
+
+// // for(let i=1; i<=num; i++){
+// //   result = i + result;
+// //   console.log(result)
+// // }
+
+// // optimize
+// let sum = (num * (num + 1)) / 2
+// console.log(sum)
+
+// console.timeEnd()
+
+
+//Factorial
+
+// let num4 = 5;
+// let sum = 1;
+
+// for(let i=1; i<=num4; i++){
+//    sum *= i
+//   console.log(sum)
+// }
